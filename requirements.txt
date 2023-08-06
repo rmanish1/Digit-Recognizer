@@ -1,5 +1,5 @@
 streamlit
-numpy
 opencv-python
+numpy
 tensorflow
 streamlit-drawable-canvas

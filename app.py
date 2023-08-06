@@ -1,12 +1,15 @@
 import streamlit as st
-from streamlit_drawable_canvas import st_canvas
 import numpy as np
 import cv2
 import tensorflow as tf
+from tensorflow.keras.models import load_model
+from streamlit_drawable_canvas import st_canvas
 
-model = tf.keras.models.load_model('digit.hdf5')
 
-st.title('Digit Recognizer:')
+# Load the model
+model = load_model('digit.hdf5')
+
+st.title('Digit Recognizer')
 
 # Create a canvas component
 canvas_result = st_canvas(stroke_width=10, stroke_color='#ffffff',
