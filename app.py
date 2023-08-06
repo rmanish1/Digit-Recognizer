@@ -11,7 +11,7 @@ model = load_model('digit.hdf5')
 st.title('Digit Recognizer')
 
 # Create a layout with two columns
-col1, col2 = st.beta_columns([1, 1])
+col1, col2 = st.columns([1, 1])
 
 # Create a canvas component in the first column
 with col1:
